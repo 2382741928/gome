@@ -1052,7 +1052,7 @@
 
 <div id="floor">
     <div class="floor">
-        <div class="f1">
+        <div class="f1 f">
             <p>小米</p>
             <div class="xm">
                 <div class="xm-l">
@@ -1063,7 +1063,7 @@
                         </li>
                     </ul>
                     <ul class="c2">
-                        <li><a href="">华为</a></li>
+                        <li><a href="">小米</a></li>
                         <li><a href="">小米</a></li>
                         <li><a href="">小米</a></li>
                         <li><a href="">小米</a></li>
@@ -1084,23 +1084,131 @@
                 <div class="xm-c">
                     <img src="gm/xiaomi.jpg" alt="">
                 </div>
+                <div class="xm-r">
+                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                    <a href=""><img src="gm/huawei.jpg" alt=""></a>
+                </div>
             </div>
         </div>
+        <div class="f2 f">
+                <p>oppo</p>
+                <div class="xm">
+                    <div class="xm-l">
+                        <img src="gm/2l.png" alt="">
+                        <ul class="c1">
+                            <li>
+                                <a href="">手机</a><span>/</span><a href="">手机</a><span>/</span><a href="">手机</a>
+                            </li>
+                        </ul>
+                        <ul class="c2">
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            <li><a href="">oppo</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="xm-c">
+                        <img src="gm/xuanli.jpg" alt="">
+                    </div>
+                    <div class="xm-r">
+                        <a href=""><img src="gm/oppo.jpg" alt=""></a>
+                        <a href=""><img src="gm/oppo.jpg" alt=""></a>
+                        <a href=""><img src="gm/oppo.jpg" alt=""></a>
+                        <a href=""><img src="gm/oppo.jpg" alt=""></a>
+                        <a href=""><img src="gm/oppo.jpg" alt=""></a>
+                        <a href=""><img src="gm/oppo.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="f3 f">
+                    <p>iphone</p>
+                    <div class="xm">
+                        <div class="xm-l">
+                            <img src="gm/3l.png" alt="">
+                            <ul class="c1">
+                                <li>
+                                    <a href="">手机</a><span>/</span><a href="">手机</a><span>/</span><a href="">手机</a>
+                                </li>
+                            </ul>
+                            <ul class="c2">
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                <li><a href="">iphone</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+                        <div class="xm-c">
+                            <img src="gm/lita.jpg" alt="">
+                        </div>
+                        <div class="xm-r">
+                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
+                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
+                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
+                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
+                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
+                            <a href=""><img src="gm/iphone.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
     </div>
 </div>
 
+<!-- 楼层 -->
+<div id="elevator">
+    <p>楼层导航</p>
+    <ul>
+        <li>huawei</li>
+        <li>oppo</li>
+        <li>iphone</li>
+    </ul>
+    <!-- 楼层 -->
+<script>
 
-
-
-
-
-
-
-
-
-
+        $("ul").children("li").click(function(){
+            var i = $(this).index();
+    
+            var now = $(".f").eq(i);
+            
+            var t = now.offset().top;
+    
+            $("html").animate({
+                scrollTop:t
+            })
+        })
+    
+    </script>
+</div>
 </body>
-
 <script src="../jquery.js"></script>
 <script  type="text/javascript" src="gm/jquery.banner.1.2.js"></script>
 <script>
@@ -1118,4 +1226,6 @@
         imgs:$(".banner").find("img"),     //必传
     })
 </script>
+
+
 </html>
