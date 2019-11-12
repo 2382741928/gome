@@ -229,22 +229,43 @@ position: relative;}
 
 #floor{height: 1000px;}
 #floor .floor{width: 1200px;margin:0 auto}
-#floor .floor .f1{height: 510px;width: 1200px;}
-#floor .floor .f1 p{height: 40px;width: 1200px;display: block;font-weight: 500;font: 32px/40px "";margin-top: 10px;}
-#floor .floor .f1 .xm{height: 470px;background: aquamarine;}
-#floor .floor .f1 .xm .xm-l{width: 210px;height: 510px;float: left;}
-#floor .floor .f1 .xm .xm-l img{width: 210px;height: 278px;}
-#floor .floor .f1 .xm .xm-l .c1 li{height: 32px;width: 210px;background:#6294f6 ;}
-#floor .floor .f1 .xm .xm-l .c1 li a{font:14px/32px "";color: #fff;}
-#floor .floor .f1 .xm .xm-l .c1 li a:first-child{margin-left: 10px;}
-#floor .floor .f1 .xm .xm-l .c1 li span{color: #fff;margin:0 5px}
+#floor .floor .f{height: 510px;width: 1200px;}
+#floor .floor .f p{height: 40px;width: 1200px;display: block;font-weight: 500;font: 32px/40px "";margin-top: 10px;}
+#floor .floor .f .xm{height: 470px;background: aquamarine;}
+#floor .floor .f .xm .xm-l{width: 210px;height: 510px;float: left;}
+#floor .floor .f .xm .xm-l img{width: 210px;height: 278px;}
+#floor .floor .f .xm .xm-l .c1 li{height: 32px;width: 210px;background:#6294f6 ;}
+#floor .floor .f .xm .xm-l .c1 li a{font:14px/32px "";color: #fff;}
+#floor .floor .f .xm .xm-l .c1 li a:first-child{margin-left: 10px;}
+#floor .floor .f .xm .xm-l .c1 li span{color: #fff;margin:0 5px}
 
-#floor .floor .f1 .xm .xm-l .c2{width: 210px;height: 160px;background: #50bfec}
-#floor .floor .f1 .xm .xm-l .c2 li{float: left;width: 70px;margin:2px 0;height: 28px;text-align: center;}
-#floor .floor .f1 .xm .xm-l .c2 li a{color: #f0f0f0;font:12px/28px ""}
+#floor .floor .f .xm .xm-l .c2{width: 210px;height: 160px;background: #50bfec}
+#floor .floor .f .xm .xm-l .c2 li{float: left;width: 70px;margin:2px 0;height: 28px;text-align: center;}
+#floor .floor .f .xm .xm-l .c2 li a{color: #f0f0f0;font:12px/28px ""}
 
-#floor .floor .f1 .xm .xm-c{float: left;}
-#floor .floor .f1 .xm .xm-c img{width: 390px;height: 470px;}
+#floor .floor .f .xm .xm-c{float: left;}
+#floor .floor .f .xm .xm-c img{width: 390px;height: 470px;}
+
+#floor .floor .f .xm .xm-r{float: left;width: 600px;height: 470px;}
+#floor .floor .f .xm .xm-r img{width: 200px;height: 235px;float: left;}
+
+#floor .floor .f2{margin-top: 40px;}
+#floor .floor .f3{margin-top: 40px;}
+
+
+/* 楼层 */
+#elevator{height: 150px;width: 65px;border: 1px solid #888;position: fixed;
+    left: 83.6px;
+    top: 41px;}
+#elevator p{height: 30px;background: #f6f6f6;
+    color: #5e5e5e;
+    font-size: 13px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 31px;}
+#elevator  ul li{height: 40px;color: #5e5e5e;font:16px/48px "";
+border-top:1px solid #A5A5A5;text-align: center;}
+
 
 
 
